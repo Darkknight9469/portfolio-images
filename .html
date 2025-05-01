@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-papmE+HRKq4yslhPZ3df1Bd3Jq+ZFJQlTG5UnyTjGyxRrOZt8cNbhUzsn5Vph1fVZGm0x5QHLo/kYNbRY1TVyA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    .typewriter {
+      overflow: hidden;
+      border-right: .15em solid orange;
+      white-space: nowrap;
+      animation: typing 4s steps(40, end), blink-caret 0.75s step-end infinite;
+    }
+
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 100% }
+    }
+
+    @keyframes blink-caret {
+      from, to { border-color: transparent }
+      50% { border-color: orange; }
+    }
+
+    .floating-icon {
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body class="bg-blue-950 text-white font-sans">
+  <!-- Hero Section -->
+  <section class="min-h-screen flex flex-col items-center justify-center text-center p-8 relative">
+    <div class="mb-6 floating-icon">
+        <img src="https://github.com/Darkknight9469/portfolio-images/raw/main/pic2.jpeg" alt="Profile" class="rounded-full w-80 h-80 border-4 border-white shadow-lg">
+
+
+    </div>
+    <h1 class="text-4xl md:text-6xl font-bold mb-4 typewriter">Hi, I'm Pratyush Kumar</h1>
+    <p class="text-lg md:text-xl mb-6">A Student & Tech Enthusiast</p>
+    <a href="#contact" class="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition">Contact Me</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-16 px-8" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-bold mb-4">About Me</h2>
+      <img src="https://raw.githubusercontent.com/github/explore/main/topics/javascript/javascript.png" alt="About Me Image" class="rounded-lg shadow-md mb-6">
+      <p class="text-lg leading-relaxed">
+        I'm a passionate software developer who loves building web applications that solve real-world problems. I'm currently focusing on full-stack development and continuously improving my skills in frontend and backend technologies.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-16 px-8">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-bold mb-10 text-center">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <div class="bg-blue-900 p-6 rounded-lg shadow hover:shadow-xl transition transform hover:scale-105" data-aos="fade-right">
+          <img src="https://raw.githubusercontent.com/github/explore/main/topics/react/react.png" alt="Project One Preview" class="rounded-lg mb-4 shadow-md">
+          <h3 class="text-2xl font-semibold mb-2">Project One</h3>
+          <p class="text-gray-300 mb-4">A web application for task management using React and Node.js.</p>
+          <a href="#" class="text-blue-300 hover:underline">View Project</a>
+        </div>
+        <div class="bg-blue-900 p-6 rounded-lg shadow hover:shadow-xl transition transform hover:scale-105" data-aos="fade-left">
+          <img src="https://raw.githubusercontent.com/github/explore/main/topics/python/python.png" alt="Project Two Preview" class="rounded-lg mb-4 shadow-md">
+          <h3 class="text-2xl font-semibold mb-2">Project Two</h3>
+          <p class="text-gray-300 mb-4">An AI chatbot built with Python and Flask for customer service automation.</p>
+          <a href="#" class="text-blue-300 hover:underline">View Project</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-16 px-8" data-aos="fade-up">
+    <div class="max-w-xl mx-auto">
+      <h2 class="text-3xl font-bold mb-6 text-center">Contact Me</h2>
+      <form class="bg-blue-900 p-6 rounded-lg shadow space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full p-3 border rounded text-black" required />
+        <input type="email" placeholder="Your Email" class="w-full p-3 border rounded text-black" required />
+        <textarea rows="5" placeholder="Your Message" class="w-full p-3 border rounded text-black" required></textarea>
+        <button type="submit" class="w-full py-3 bg-blue-600 text-white rounded hover:bg-blue-700">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="text-center py-6 text-sm text-gray-400">
+    © 2025 [Your Name]. All rights reserved.
+  </footer>
+
+  <!-- Animation Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ once: true });
+  </script>
+</body>
+</html>
